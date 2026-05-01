@@ -66,10 +66,10 @@ export default function DashboardView({ navigateTo, onViewJob }: { navigateTo: (
           />
           <DashboardCard 
             title="طلباتي" 
-            value="١" 
+            value="٢" 
             icon={<SendIcon className="w-6 h-6 text-blue-600" />}
             color="bg-blue-50"
-            onClick={() => {}}
+            onClick={() => navigateTo('applications')}
           />
           <DashboardCard 
             title="دورات تدريبية" 

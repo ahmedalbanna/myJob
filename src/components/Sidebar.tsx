@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Compass, FileAudio, Home, LayoutDashboard, Lightbulb, LogOut, Menu, Settings, X, User } from 'lucide-react';
+import { Briefcase, Compass, FileAudio, Home, LayoutDashboard, Lightbulb, LogOut, Menu, Settings, X, User, Send } from 'lucide-react';
 
 interface SidebarProps {
   currentView: string;
@@ -12,6 +12,7 @@ export function Sidebar({ currentView, setCurrentView, isOpen, setIsOpen }: Side
   const menuItems = [
     { id: 'dashboard', label: 'الرئيسية', icon: Home },
     { id: 'jobs', label: 'فرص العمل', icon: Briefcase },
+    { id: 'applications', label: 'طلباتي', icon: Send },
     { id: 'guidance', label: 'المستشار المهني', icon: Compass },
     { id: 'projects', label: 'دعم المشاريع', icon: Lightbulb },
     { id: 'profile', label: 'الملف المهني', icon: User },

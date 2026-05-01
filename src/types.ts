@@ -32,3 +32,23 @@ export interface Course {
   location: string;
   type: 'حضوري' | 'عن بعد';
 }
+
+export type ApplicationStatus = 'تم الإرسال' | 'قيد المراجعة' | 'تمت مشاهدة ملفك' | 'تم الترشيح لمقابلة' | 'نعتذر منك' | 'تم السحب';
+
+export interface InterviewDetails {
+  date: string;
+  location: string;
+  type: 'حضوري' | 'صوتي/مرئي عبر التطبيق';
+  link?: string;
+}
+
+export interface Application {
+  id: string;
+  jobId: string;
+  jobTitle: string;
+  entity: string;
+  appliedAt: string;
+  status: ApplicationStatus;
+  interviewDetails?: InterviewDetails;
+  attachments?: string[];
+}
